@@ -4,6 +4,7 @@
 }
 .menu-style {
   width: 100%;
+  padding-left: 0rem;
 }
 .menu-style li {
   list-style-type: none;
