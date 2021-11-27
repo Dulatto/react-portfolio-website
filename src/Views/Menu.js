@@ -6,7 +6,7 @@ function Menu(props) {
         <ul className='menu-style '>
             {menu.map(item => {
                 return (
-                    <li key={item.id} className='text-light d-flex justify-content-center'>
+                    <li key={item.id} className='text-light d-flex justify-content-center '>
                         {item.name}
                     </li>
                 )
