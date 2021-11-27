@@ -3,10 +3,10 @@ import menu from '../data';
 
 function Menu(props) {
     return (
-        <ul>
+        <ul className='menu-style'>
             {menu.map(item => {
                 return (
-                    <li key={item.id}>
+                    <li key={item.id} className='text-light'>
                         {item.name}
                     </li>
                 )

@@ -2,3 +2,9 @@
   height: 100vh;
   background: rgb(50, 50, 95);
 }
+.menu-style {
+  width: 100%;
+}
+.menu-style li {
+  list-style-type: none;
+}
