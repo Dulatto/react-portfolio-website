@@ -6,6 +6,8 @@
   width: 100%;
   padding-left: 0rem;
 }
-.menu-style li {
-  list-style-type: none;
+
+.menu-style a {
+  color: #fff;
+  text-decoration: none;
 }
