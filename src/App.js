@@ -1,6 +1,16 @@
 import React from 'react';
 import './App.css';
 import Menu from './Views/Menu';
+import Home from './Views/Home';
+import About from './Views/About';
+import Portfolio from './Views/Portfolio';
+import Contact from './Views/Contact';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 const App = () => {
   return (
@@ -11,7 +21,15 @@ const App = () => {
             <div>Photo</div>
             <Menu />
           </div>
-          <div className='col-xl-10 col-lg-9 col-md-8 bg-light'>TEST</div>
+          <div className='col-xl-10 col-lg-9 col-md-8 bg-light'>
+            <Routes >
+              <Route exact path="/" component={<Home />} />
+              <Route path="/about" component={<About />} />
+              <Route path="/portfolio" component={<Portfolio />} />
+              <Route path="/contact" component={<Contact />} />
+
+            </Routes>
+          </div>
         </div>
       </div>
     </div>
