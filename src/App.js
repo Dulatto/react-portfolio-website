@@ -23,10 +23,10 @@ const App = () => {
           </div>
           <div className='col-xl-10 col-lg-9 col-md-8 bg-light'>
             <Routes >
-              <Route exact path="/" component={<Home />} />
-              <Route path="/about" component={<About />} />
-              <Route path="/portfolio" component={<Portfolio />} />
-              <Route path="/contact" component={<Contact />} />
+              <Route exact path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/contact" element={<Contact />} />
 
             </Routes>
           </div>
