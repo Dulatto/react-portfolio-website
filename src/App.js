@@ -21,7 +21,7 @@ const App = () => {
             <div>Photo</div>
             <Menu />
           </div>
-          <div className='col-xl-10 col-lg-9 col-md-8 bg-light'>
+          <div className='col-xl-10 col-lg-9 col-md-8 bg-light px-0'>
             <Routes >
               <Route exact path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
