@@ -1,6 +1,6 @@
 .main-div {
   height: 100vh;
-  background: rgb(50, 50, 95);
+  background: #181818;
 }
 .menu-style {
   width: 100%;
@@ -13,5 +13,18 @@
 }
 .home-style {
   background: #7272d6;
+  height: 100vh;
+}
+.about-style {
+  background: #8787ff;
+  height: 100vh;
+}
+
+.portfolio-style {
+  background: #8080f2;
+  height: 100vh;
+}
+.contact-style {
+  background: #8080f2;
   height: 100vh;
 }
