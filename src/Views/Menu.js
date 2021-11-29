@@ -1,8 +1,4 @@
 import React from 'react';
-// import Home from '.Home';
-// import About from '.About';
-// import Portfolio from '.Portfolio';
-// import Contact from '.Contact';
 import {
     BrowserRouter as Router,
     Routes,
@@ -15,6 +11,7 @@ function Menu(props) {
 
 
         <div>
+            <div className='p-3 text-white my-5'>My logo</div>
             <ul className='menu-style '>
                 <li className='text-light d-flex justify-content-center '>
                     <Link to="/">HOME</Link>
