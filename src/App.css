@@ -12,7 +12,8 @@
   text-decoration: none;
 }
 .menu-style a:hover,
-.name-color {
+.name-color,
+.home-style span:hover {
   color: #06c5a9;
 }
 
@@ -32,6 +33,7 @@
 }
 .home-style h1 {
   font-family: "Alfa Slab One", cursive;
+  line-height: 1;
 }
 .home-style .btn {
   border-radius: 0rem;
