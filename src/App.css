@@ -30,6 +30,9 @@
   font-family: "Alfa Slab One", cursive;
   font-size: 60px;
 }
+.contact-style p {
+  color: #fff;
+}
 .home-style {
   min-height: 100vh;
   padding: 9rem 3rem;
