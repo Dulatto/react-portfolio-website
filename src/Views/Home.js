@@ -11,7 +11,7 @@ function Home(props) {
                 <span className='hvr-wobble-vertical'>m</span> <span className='name-color'>D</span><span className='hvr-wobble-vertical'>u</span><span className='hvr-wobble-vertical'>l</span><span className='hvr-wobble-vertical'>a</span><span className='hvr-wobble-vertical'>t</span><span className='hvr-wobble-vertical'>,</span></h1>
             <h1 className='h1-styled'><span className='hvr-wobble-vertical'>w</span>
                 <span className='hvr-wobble-vertical'>e</span>
-                <span className='hvr-wobble-vertical'>b</span> <span>d</span>
+                <span className='hvr-wobble-vertical'>b</span> <span className='hvr-wobble-vertical'>d</span>
                 <span className='hvr-wobble-vertical'>e</span>
                 <span className='hvr-wobble-vertical'>v</span>
                 <span className='hvr-wobble-vertical'>e</span>
