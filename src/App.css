@@ -14,7 +14,7 @@
 .menu-style a:hover,
 .name-color,
 .home-style span:hover {
-  color: #06c5a9;
+  color: #08fdd8;
 }
 
 .home-style,
@@ -26,7 +26,7 @@
 }
 
 .contact-style h1 {
-  color: #06c5a9;
+  color: #08fdd8;
   font-family: "Alfa Slab One", cursive;
   font-size: 60px;
 }
@@ -46,17 +46,17 @@
   padding: 0.375rem 2.75rem;
 }
 .btn-outline-primary {
-  color: #06c5a9;
-  border-color: #06c5a9;
+  color: #08fdd8;
+  border-color: #08fdd8;
 }
 .btn-outline-primary:hover {
   color: #2b2b2b;
-  background-color: #06c5a9;
-  border-color: #06c5a9;
+  background-color: #08fdd8;
+  border-color: #08fdd8;
 }
 .btn-check:focus + .btn-outline-primary,
 .btn-outline-primary:focus {
-  box-shadow: 0 0 0 0.25rem #06c5a9;
+  box-shadow: 0 0 0 0.25rem #08fdd8;
 }
 
 .btn-check:active + .btn-outline-primary:focus,
@@ -64,7 +64,7 @@
 .btn-outline-primary.active:focus,
 .btn-outline-primary.dropdown-toggle.show:focus,
 .btn-outline-primary:active:focus {
-  box-shadow: 0 0 0 0.25rem #06c5a9;
+  box-shadow: 0 0 0 0.25rem #08fdd8;
 }
 
 /* Wobble Vertical */
@@ -161,7 +161,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #06c5a9;
+  background: #08fdd8;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
