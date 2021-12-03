@@ -55,7 +55,8 @@ body {
   max-width: 420px;
 }
 .map {
-  background: url("./images/map.jpg") no-repeat center center;
+  background: linear-gradient(rgba(8, 253, 216, 0.35), rgba(8, 253, 216, 0.35)),
+    url("./images/map.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
