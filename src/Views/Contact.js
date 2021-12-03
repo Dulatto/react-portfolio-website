@@ -4,7 +4,7 @@ function Contact(props) {
     return (
         <div className='contact-style'>
             <div className='row'>
-                <div className='col-md-6'>
+                <div className='col-md-6 cont-size'>
                     <div className='contact-cont'>
                         <div className='my-5'>&nbsp;</div>
                         <h1 className='mt-5 ms-4'>
@@ -42,7 +42,7 @@ function Contact(props) {
                         </div>
                     </div>
                 </div>
-                <div className='col-md-6 bg-info'></div>
+                <div className='col-md-6 map'></div>
             </div>
         </div>
     );
