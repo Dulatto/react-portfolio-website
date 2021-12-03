@@ -35,8 +35,8 @@ function Contact(props) {
                             </div>
                             <div className='col-12'>
                                 <div className="form-floating">
-                                    <textarea className="form-control" style={{ height: 100 + 'px' }} id="message"></textarea>
-                                    <label htmlFor='message' >Message</label>
+                                    <textarea className="form-control" style={{ height: 100 + 'px' }} ></textarea>
+
                                 </div>
                             </div>
                         </div>
