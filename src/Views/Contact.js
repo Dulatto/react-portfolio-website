@@ -5,7 +5,8 @@ function Contact(props) {
         <div className='contact-style'>
             <div className='row'>
                 <div className='col-md-6'>
-                    <div>
+                    <div className='contact-cont'>
+                        <div className='my-5'>&nbsp;</div>
                         <h1 className='mt-5 ms-4'>
                             <span className='hvr-wobble-vertical'>C</span>
                             <span className='hvr-wobble-vertical'>o</span>
@@ -41,7 +42,7 @@ function Contact(props) {
                         </div>
                     </div>
                 </div>
-                <div className='col-md-6'></div>
+                <div className='col-md-6 bg-info'></div>
             </div>
         </div>
     );
