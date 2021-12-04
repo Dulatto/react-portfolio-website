@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-function About(props) {
+
+
+function About() {
+
+
     return (
         <div className='about-style'>
             <div className='row'>
@@ -19,7 +23,9 @@ function About(props) {
 
                     </div>
                 </div>
-                <div className='col-md-6 '></div>
+                <div className='col-md-6'>
+
+                </div>
             </div>
         </div>
     );
