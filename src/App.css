@@ -29,15 +29,18 @@ body {
   background: #2b2b2b;
   height: 100vh;
 }
-.contact-style .cont-size {
+.contact-style .cont-size,
+.about-style .about-size {
   height: 100vh;
 }
-.contact-style h1 {
+.contact-style h1,
+.about-style h1 {
   color: #08fdd8;
   font-family: "Alfa Slab One", cursive;
   font-size: 60px;
 }
-.contact-style p {
+.contact-style p,
+.about-style p {
   color: #fff;
 }
 .contact-style .form-control {
@@ -51,7 +54,8 @@ body {
   box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
   border-bottom: 1px solid #08fdd8;
 }
-.contact-cont {
+.contact-cont,
+.about-cont {
   max-width: 420px;
 }
 .map {
