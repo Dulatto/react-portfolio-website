@@ -19,7 +19,7 @@ function About(props) {
 
                     </div>
                 </div>
-                <div className='col-md-6 map'></div>
+                <div className='col-md-6 '></div>
             </div>
         </div>
     );
