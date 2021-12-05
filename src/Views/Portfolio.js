@@ -15,6 +15,9 @@ const images = [
 ]
 
 function Portfolio(props) {
+
+    let list;
+
     return (
         <div className='portfolio-style'>
             <div className='row'>
