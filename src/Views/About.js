@@ -26,12 +26,12 @@ function About() {
                     </div>
                 </div>
                 <div className='col-md-6'>
-                    <div className='mt-5' style={{ width: '300px', height: '300px' }}>
-                        <TagCloud tagName={tagName} radius={200} speed={1}></TagCloud>
+                    <div className='mt-5' style={{ width: '300px', height: '300px', color: 'red' }}>
+                        <TagCloud tagName={tagName} radius={200} speed={1} ></TagCloud>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 
