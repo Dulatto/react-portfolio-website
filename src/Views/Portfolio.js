@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const images = [
     { id: 1, text: 'Dating', description: 'HTML, JavaScript', type: 'JS' },
@@ -14,14 +14,33 @@ const images = [
     { id: 11, text: 'Portfolio', description: 'HTML, JavaScript', type: 'React' },
 ]
 
-function Portfolio(props) {
+let list = images.map(item => {
+    return <div key={item.id} className="col-md-4">{item.text}</div>
+})
 
-    let list;
+const Portfolio = () => {
+    const [gallery, setGallery] = useState([list])
+
+
+
+
+    const all = () => {
+        let list = images.map(item => {
+            return <div key={item.id} className="col-md-4">{item.text}</div>
+        })
+        setGallery(list);
+    }
+
 
     return (
         <div className='portfolio-style'>
-            <div className='row'>
-
+            <div>
+                <button type="button" class="btn btn-outline-secondary">All</button>
+                <button type="button" class="btn btn-outline-secondary">Websites</button>
+                <button type="button" class="btn btn-outline-secondary">React</button>
+            </div>
+            <div className='row text-white'>
+                {gallery}
             </div>
         </div>
     );
