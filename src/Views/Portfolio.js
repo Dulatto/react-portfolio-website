@@ -18,9 +18,7 @@ function Portfolio(props) {
     return (
         <div className='portfolio-style'>
             <div className='row'>
-                <div className='col-md-4'></div>
-                <div className='col-md-4'></div>
-                <div className='col-md-4'></div>
+
             </div>
         </div>
     );
