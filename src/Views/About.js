@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import TagCloud from 'react3dtagcloud';
 
 
-const tagName = ['java', 'javscript', 'C', 'C++', '前端', 'React', 'Vue', 'redux', '写作', '程序员', '编程']
+const tagName = ['JavaScript', 'React.js', 'TypeScript', 'Node.js', 'HTML5', 'Bootstrap5', 'Agile', 'Webpack', 'REST APIs', 'Redux', 'Responsive Design']
 
 function About() {
 
@@ -26,8 +26,9 @@ function About() {
                     </div>
                 </div>
                 <div className='col-md-6'>
-                    <div className='mt-5' style={{ width: '300px', height: '300px', color: 'red' }}>
-                        <TagCloud tagName={tagName} radius={200} speed={1} ></TagCloud>
+                    <div className='my-5'>&nbsp;</div>
+                    <div className='mt-5' style={{ width: '300px', height: '300px', padding: '100px' }}>
+                        <TagCloud tagName={tagName} radius={250} speed={1}  ></TagCloud>
                     </div>
                 </div>
             </div>
