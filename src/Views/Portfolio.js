@@ -48,9 +48,9 @@ const Portfolio = () => {
     return (
         <div className='portfolio-style'>
             <div>
-                <button type="button" className="btn btn-outline-secondary" onClick={allList}>All</button>
-                <button type="button" className="btn btn-outline-secondary" onClick={website}>Websites</button>
-                <button type="button" className="btn btn-outline-secondary" onClick={react}>React</button>
+                <button type="button" className="btn btn-outline-primary hvr-bounce-to-right mt-3 ms-3" onClick={allList}>All</button>
+                <button type="button" className="btn btn-outline-primary hvr-bounce-to-right mt-3 ms-3" onClick={website}>Websites</button>
+                <button type="button" className="btn btn-outline-primary hvr-bounce-to-right mt-3 ms-3" onClick={react}>React</button>
             </div>
             <div className='row text-white'>
                 {gallery}
