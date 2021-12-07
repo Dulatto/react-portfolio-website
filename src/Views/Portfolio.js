@@ -28,21 +28,24 @@ let list = images.map(item => {
 const Portfolio = () => {
     const [gallery, setGallery] = useState([list])
 
-
+    const frame = (item) => {
+        return (
+            <div className="col-md-4" >
+                <div class="card text-dark bg-light mb-3" key={item.id}>
+                    <div class="card-body">
+                        <h5 class="card-title">{item.text}</h5>
+                        <p class="card-text">{item.description}</p>
+                    </div>
+                </div>
+            </div >);
+    }
 
 
     const allList = () => {
         let list = images.map(item => {
             return (
-                <div className="col-md-4">
-                    <div class="card text-dark bg-light mb-3" key={item.id}>
-                        <div class="card-body">
-                            <h5 class="card-title">{item.text}</h5>
-                            <p class="card-text">{item.description}</p>
-                        </div>
-                    </div>
-                </div>)
-
+                frame(item)
+            )
         })
         setGallery(list);
     }
@@ -50,14 +53,8 @@ const Portfolio = () => {
         let list = images.filter(item => item.type === 'JS')
         let web = list.map(item => {
             return (
-                <div className="col-md-4">
-                    <div class="card text-dark bg-light mb-3" key={item.id}>
-                        <div class="card-body">
-                            <h5 class="card-title">{item.text}</h5>
-                            <p class="card-text">{item.description}</p>
-                        </div>
-                    </div>
-                </div>)
+                frame(item)
+            )
         });
         setGallery(web);
     }
@@ -65,14 +62,8 @@ const Portfolio = () => {
         let list = images.filter(item => item.type === 'React')
         let web = list.map(item => {
             return (
-                <div className="col-md-4">
-                    <div class="card text-dark bg-light mb-3" key={item.id}>
-                        <div class="card-body">
-                            <h5 class="card-title">{item.text}</h5>
-                            <p class="card-text">{item.description}</p>
-                        </div>
-                    </div>
-                </div>)
+                frame(item)
+            )
         });
         setGallery(web);
     }
