@@ -24,20 +24,33 @@ const Portfolio = () => {
 
 
 
-    const all = () => {
+    const allList = () => {
         let list = images.map(item => {
             return <div key={item.id} className="col-md-4">{item.text}</div>
         })
         setGallery(list);
     }
-
+    const website = () => {
+        let list = images.filter(item => item.type === 'JS')
+        let web = list.map(item => {
+            return <div key={item.id} className="col-md-4">{item.text}</div>
+        });
+        setGallery(web);
+    }
+    const react = () => {
+        let list = images.filter(item => item.type === 'React')
+        let web = list.map(item => {
+            return <div key={item.id} className="col-md-4">{item.text}</div>
+        });
+        setGallery(web);
+    }
 
     return (
         <div className='portfolio-style'>
             <div>
-                <button type="button" class="btn btn-outline-secondary">All</button>
-                <button type="button" class="btn btn-outline-secondary">Websites</button>
-                <button type="button" class="btn btn-outline-secondary">React</button>
+                <button type="button" className="btn btn-outline-secondary" onClick={allList}>All</button>
+                <button type="button" className="btn btn-outline-secondary" onClick={website}>Websites</button>
+                <button type="button" className="btn btn-outline-secondary" onClick={react}>React</button>
             </div>
             <div className='row text-white'>
                 {gallery}
