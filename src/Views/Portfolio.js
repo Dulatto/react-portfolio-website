@@ -15,7 +15,14 @@ const images = [
 ]
 
 let list = images.map(item => {
-    return <div key={item.id} className="col-md-4">{item.text}</div>
+    return (<div className="col-md-4">
+        <div class="card text-dark bg-light mb-3 shadow" key={item.id}>
+            <div class="card-body">
+                <h5 class="card-title">{item.text}</h5>
+                <p class="card-text">{item.description}</p>
+            </div>
+        </div>
+    </div>)
 })
 
 const Portfolio = () => {
@@ -26,21 +33,46 @@ const Portfolio = () => {
 
     const allList = () => {
         let list = images.map(item => {
-            return <div key={item.id} className="col-md-4">{item.text}</div>
+            return (
+                <div className="col-md-4">
+                    <div class="card text-dark bg-light mb-3" key={item.id}>
+                        <div class="card-body">
+                            <h5 class="card-title">{item.text}</h5>
+                            <p class="card-text">{item.description}</p>
+                        </div>
+                    </div>
+                </div>)
+
         })
         setGallery(list);
     }
     const website = () => {
         let list = images.filter(item => item.type === 'JS')
         let web = list.map(item => {
-            return <div key={item.id} className="col-md-4">{item.text}</div>
+            return (
+                <div className="col-md-4">
+                    <div class="card text-dark bg-light mb-3" key={item.id}>
+                        <div class="card-body">
+                            <h5 class="card-title">{item.text}</h5>
+                            <p class="card-text">{item.description}</p>
+                        </div>
+                    </div>
+                </div>)
         });
         setGallery(web);
     }
     const react = () => {
         let list = images.filter(item => item.type === 'React')
         let web = list.map(item => {
-            return <div key={item.id} className="col-md-4">{item.text}</div>
+            return (
+                <div className="col-md-4">
+                    <div class="card text-dark bg-light mb-3" key={item.id}>
+                        <div class="card-body">
+                            <h5 class="card-title">{item.text}</h5>
+                            <p class="card-text">{item.description}</p>
+                        </div>
+                    </div>
+                </div>)
         });
         setGallery(web);
     }
