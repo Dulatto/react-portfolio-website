@@ -69,11 +69,30 @@ body {
 }
 .bground-1 {
   background: url("./images/dating.jpg");
+}
+.bground-2 {
+  background: url("./images/rest.jpg");
+}
+.bground-3 {
+  background: url("./images/dating-2.jpg");
+}
+.bground-1,
+.bground-2,
+.bground-3,
+.bground-4,
+.bground-5,
+.bground-6,
+.bground-7,
+.bground-8,
+.bground-9,
+.bground-10,
+.bground-11 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   height: 267px;
+  /*border: 2px solid#08fdd8;*/
 }
 .home-style {
   min-height: 100vh;
