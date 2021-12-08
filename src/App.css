@@ -67,6 +67,14 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+.bground-1 {
+  background: url("./images/dating.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 267px;
+}
 .home-style {
   min-height: 100vh;
   padding: 9rem 3rem;

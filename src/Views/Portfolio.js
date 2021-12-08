@@ -16,7 +16,7 @@ const images = [
 
 let list = images.map(item => {
     return (<div className="col-md-4">
-        <div class="card text-dark bg-light mb-3 shadow" key={item.id}>
+        <div class={`card text-dark mb-3 bground-${item.id}`} key={item.id}>
             <div class="card-body">
                 <h5 class="card-title">{item.text}</h5>
                 <p class="card-text">{item.description}</p>
@@ -28,13 +28,19 @@ let list = images.map(item => {
 const Portfolio = () => {
     const [gallery, setGallery] = useState([list])
 
+
+
+
+
+
+
     const frame = (item) => {
         return (
             <div className="col-md-4" >
-                <div class="card text-dark bg-light mb-3" key={item.id}>
-                    <div class="card-body">
-                        <h5 class="card-title">{item.text}</h5>
-                        <p class="card-text">{item.description}</p>
+                <div className={`card text-dark mb-3 bground-${item.id}`} key={item.id}>
+                    <div className="card-body">
+                        <h5 className="card-title">{item.text}</h5>
+                        <p className="card-text">{item.description}</p>
                     </div>
                 </div>
             </div >);
@@ -67,6 +73,7 @@ const Portfolio = () => {
         });
         setGallery(web);
     }
+
 
     return (
         <div className='portfolio-style'>
