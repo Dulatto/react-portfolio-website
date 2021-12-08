@@ -75,7 +75,7 @@ const Portfolio = () => {
                 <button type="button" className="btn btn-outline-primary hvr-bounce-to-right mt-3 ms-3" onClick={website}>Websites</button>
                 <button type="button" className="btn btn-outline-primary hvr-bounce-to-right mt-3 ms-3" onClick={react}>React</button>
             </div>
-            <div className='row text-white'>
+            <div className='row text-white mt-2 px-2'>
                 {gallery}
             </div>
         </div>
