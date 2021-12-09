@@ -23,8 +23,9 @@ let list = images.map(item => {
                 <div class="hover-text">
                     <div class="overlay-caption">
                         <div class="overlay-content">
-                            <h5 class="card-title">{item.text}</h5>
-                            <p class="card-text">{item.description}</p>
+                            <h4 class="card-title">{item.text}</h4>
+                            <hr />
+                            <h5 class="card-text">{item.description}</h5>
                         </div>
                     </div>
                 </div >
