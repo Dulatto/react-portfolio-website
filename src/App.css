@@ -100,6 +100,13 @@ body {
 .bground-11 {
   background: url("./images/portfolio.jpg");
 }
+.bground-12 {
+  background: url("./images/shopping_carts.jpg");
+}
+.bground-13 {
+  background: url("./images/timer.jpg");
+}
+
 .bground-1,
 .bground-2,
 .bground-3,
@@ -110,7 +117,9 @@ body {
 .bground-8,
 .bground-9,
 .bground-10,
-.bground-11 {
+.bground-11,
+.bground-12,
+.bground-13 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

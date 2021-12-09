@@ -11,7 +11,9 @@ const images = [
     { id: 8, text: 'Weather', description: 'HTML, JavaScript', type: 'React' },
     { id: 9, text: 'Todo', description: 'HTML, JavaScript', type: 'React' },
     { id: 10, text: 'Tracker', description: 'HTML, JavaScript', type: 'React' },
-    { id: 11, text: 'Portfolio', description: 'HTML, JavaScript', type: 'React' },
+    { id: 11, text: 'Portfolio', description: 'HTML, JavaScript', type: 'JS' },
+    { id: 12, text: 'Shopping cart', description: 'HTML, JavaScript', type: 'React' },
+    { id: 13, text: 'Timer', description: 'HTML, JavaScript', type: 'React' },
 ]
 
 let list = images.map(item => {
