@@ -31,11 +31,6 @@ const Portfolio = () => {
     const [gallery, setGallery] = useState([list])
 
 
-
-
-
-
-
     const frame = (item) => {
         return (
             <div className="col-md-3" >
