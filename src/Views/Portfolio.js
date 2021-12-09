@@ -17,8 +17,8 @@ const images = [
 ]
 
 let list = images.map(item => {
-    return (<div className="col-md-4">
-        <div class={`card text-dark mb-3 bground-${item.id}`} key={item.id}>
+    return (<div className="col-md-3">
+        <div class={`card text-dark mb-2 bground-${item.id}`} key={item.id}>
             <div class="card-body">
                 <h5 class="card-title">{item.text}</h5>
                 <p class="card-text">{item.description}</p>
@@ -38,8 +38,8 @@ const Portfolio = () => {
 
     const frame = (item) => {
         return (
-            <div className="col-md-4" >
-                <div className={`card text-dark mb-3 bground-${item.id}`} key={item.id}>
+            <div className="col-md-3" >
+                <div className={`card text-dark mb-2 bground-${item.id}`} key={item.id}>
                     <div className="card-body">
                         <h5 className="card-title">{item.text}</h5>
                         <p className="card-text">{item.description}</p>
