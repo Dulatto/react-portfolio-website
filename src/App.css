@@ -164,6 +164,37 @@ body {
   box-shadow: 0 0 0 0.25rem #08fdd8;
 }
 
+/* =================================================================*/
+.portfolio-item .hover-bg {
+  overflow: hidden;
+  position: relative;
+}
+.hover-bg .hover-text {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: #333;
+  background: rgba(255, 255, 255, 0.75);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.hover-bg .hover-text .overlay-caption {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.hover-bg .hover-text .overlay-caption .overlay-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+.hover-bg:hover .hover-text {
+  opacity: 1;
+}
+.card-body {
+  padding: 0rem 0rem;
+}
 /* Wobble Vertical */
 @-webkit-keyframes hvr-wobble-vertical {
   16.65% {

@@ -17,11 +17,17 @@ const images = [
 ]
 
 let list = images.map(item => {
-    return (<div className="col-md-3">
-        <div class={`card text-dark mb-2 bground-${item.id}`} key={item.id}>
+    return (<div className="col-md-3 portfolio-item">
+        <div class={`card hover-bg text-dark mb-2 bground-${item.id}`} key={item.id}>
             <div class="card-body">
-                <h5 class="card-title">{item.text}</h5>
-                <p class="card-text">{item.description}</p>
+                <div class="hover-text">
+                    <div class="overlay-caption">
+                        <div class="overlay-content">
+                            <h5 class="card-title">{item.text}</h5>
+                            <p class="card-text">{item.description}</p>
+                        </div>
+                    </div>
+                </div >
             </div>
         </div>
     </div>)
