@@ -195,6 +195,17 @@ body {
 .card-body {
   padding: 0rem 0rem;
 }
+.portfolio-item hr {
+  height: 6px !important;
+  width: 100px;
+  position: relative;
+  background: #000;
+  margin-bottom: 20px;
+  margin-left: 0;
+  border: 0;
+  opacity: 1 !important;
+}
+
 /* Wobble Vertical */
 @-webkit-keyframes hvr-wobble-vertical {
   16.65% {

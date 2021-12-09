@@ -40,11 +40,18 @@ const Portfolio = () => {
 
     const frame = (item) => {
         return (
-            <div className="col-md-3" >
-                <div className={`card text-dark mb-2 bground-${item.id}`} key={item.id}>
+            <div className="col-md-3  portfolio-item" >
+                <div className={`card hover-bg text-dark mb-2 bground-${item.id}`} key={item.id}>
                     <div className="card-body">
-                        <h5 className="card-title">{item.text}</h5>
-                        <p className="card-text">{item.description}</p>
+                        <div class="hover-text">
+                            <div class="overlay-caption">
+                                <div class="overlay-content">
+                                    <h4 className="card-title">{item.text}</h4>
+                                    <hr />
+                                    <h5 className="card-text">{item.description}</h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div >);
