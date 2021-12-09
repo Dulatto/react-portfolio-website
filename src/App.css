@@ -76,6 +76,30 @@ body {
 .bground-3 {
   background: url("./images/dating-2.jpg");
 }
+.bground-4 {
+  background: url("./images/med.jpg");
+}
+.bground-5 {
+  background: url("./images/book.jpg");
+}
+.bground-6 {
+  background: url("./images/pet.jpg");
+}
+.bground-7 {
+  background: url("./images/cafe.jpg");
+}
+.bground-8 {
+  background: url("./images/weather.png");
+}
+.bground-9 {
+  background: url("./images/todo.jpg");
+}
+.bground-10 {
+  background: url("./images/corona.jpg");
+}
+.bground-11 {
+  background: url("./images/portfolio.jpg");
+}
 .bground-1,
 .bground-2,
 .bground-3,
