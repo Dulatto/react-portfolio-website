@@ -22,6 +22,15 @@ body {
   color: #08fdd8;
 }
 
+.social {
+  list-style-type: none;
+}
+
+.social i {
+  color: #fff;
+  text-decoration: none;
+}
+
 .home-style,
 .about-style,
 .portfolio-style,

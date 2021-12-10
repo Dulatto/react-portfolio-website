@@ -11,7 +11,7 @@ function Menu(props) {
 
 
         <div>
-            <div className='p-3 text-white my-5'>My logo</div>
+            <div className='p-3 text-white my-5 d-flex justify-content-center'>My logo</div>
             <ul className='menu-style '>
                 <li className='text-light d-flex justify-content-center '>
                     <Link to="/">HOME</Link>
@@ -29,7 +29,11 @@ function Menu(props) {
 
             <hr />
 
+            <ul className='social list-inline d-flex justify-content-center'>
+                <li className='list-inline-item'><a href="https://www.linkedin.com/in/dulat-omarov/" target="_blank"><i className="fab fa-linkedin fa-2x"></i></a></li>
+                <li className='list-inline-item'><a href="https://github.com/Dulatto" target="_blank"><i className="fab fa-github fa-2x"></i></a></li>
 
+            </ul>
         </div>
 
     );
