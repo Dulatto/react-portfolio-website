@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 const images = [
-    { id: 1, text: 'Dating', description: 'HTML, JavaScript', type: 'JS' },
-    { id: 2, text: 'Restaurant', description: 'HTML, JavaScript', type: 'JS' },
+    { id: 1, text: 'Dating', description: 'HTML, JavaScript', type: 'JS', url: 'https://www.bootyfinder.com//' },
+    { id: 2, text: 'Restaurant', description: 'HTML, JavaScript', type: 'JS', url: 'http://www.terredesboers.ca///' },
     { id: 3, text: 'Dating', description: 'HTML, JavaScript', type: 'JS' },
     { id: 4, text: 'Medical', description: 'HTML, JavaScript', type: 'JS' },
     { id: 5, text: 'Book', description: 'HTML, JavaScript', type: 'JS' },
