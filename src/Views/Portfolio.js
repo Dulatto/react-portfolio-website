@@ -8,12 +8,12 @@ const images = [
     { id: 5, text: 'Book Store', description: 'HTML, JavaScript', type: 'JS', url: 'https://bestseller.kz/' },
     { id: 6, text: 'Pet Supply Store', description: 'HTML, JavaScript', type: 'JS', url: 'http://miska.kz/' },
     { id: 7, text: 'Cafe', description: 'HTML, JavaScript', type: 'JS', url: 'http://www.falafelstjacques.com/' },
-    { id: 8, text: 'Weather Widget', description: 'HTML, JavaScript', type: 'React', url: 'https://react-weather-widget-dulatto.vercel.app/' },
-    { id: 9, text: 'ToDo List', description: 'HTML, JavaScript', type: 'React', url: 'https://react-todo-list-iiwqmujls.vercel.app/' },
-    { id: 10, text: 'Covid Tracker', description: 'HTML, JavaScript', type: 'React', url: 'https://react-corona-tracker-plum.vercel.app/' },
-    { id: 11, text: 'Portfolio', description: 'HTML, JavaScript', type: 'JS' },
-    { id: 12, text: 'Shopping cart', description: 'HTML, JavaScript', type: 'React', url: 'https://redux-store-orpin.vercel.app/' },
-    { id: 13, text: 'Timer', description: 'HTML, JavaScript', type: 'React', url: 'https://react-timer-dulatto.vercel.app/' },
+    { id: 8, text: 'Weather Widget', description: 'React, JavaScript', type: 'React', url: 'https://react-weather-widget-dulatto.vercel.app/' },
+    { id: 9, text: 'ToDo List', description: 'React, JavaScript', type: 'React', url: 'https://react-todo-list-iiwqmujls.vercel.app/' },
+    { id: 10, text: 'Covid Tracker', description: 'React, JavaScript', type: 'React', url: 'https://react-corona-tracker-plum.vercel.app/' },
+    { id: 11, text: 'Portfolio', description: 'React, JavaScript', type: 'JS' },
+    { id: 12, text: 'Shopping cart', description: 'React, Redux, JavaScript', type: 'React', url: 'https://redux-store-orpin.vercel.app/' },
+    { id: 13, text: 'Timer', description: 'React, JavaScript', type: 'React', url: 'https://react-timer-dulatto.vercel.app/' },
 ]
 
 let list = images.map(item => {
