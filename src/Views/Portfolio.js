@@ -17,7 +17,7 @@ const images = [
 ]
 
 let list = images.map(item => {
-    return (<div className="col-md-3 portfolio-item">
+    return (<div className="col-lg-3 col-md-4 col-sm-6 portfolio-item">
         <div class={`card hover-bg text-dark mb-2 bground-${item.id}`} key={item.id}>
             <a href={item.url} target="_blank">
                 <div class="card-body">
@@ -42,7 +42,7 @@ const Portfolio = () => {
 
     const frame = (item) => {
         return (
-            <div className="col-md-3  portfolio-item" >
+            <div className="col-lg-3 col-md-4 col-sm-6  portfolio-item" >
                 <div className={`card hover-bg text-dark mb-2 bground-${item.id}`} key={item.id}>
                     <div className="card-body">
                         <div class="hover-text">

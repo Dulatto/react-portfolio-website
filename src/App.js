@@ -19,7 +19,7 @@ const App = () => {
         <div className='main-div'>
           <Menu />
         </div>
-        <div className='row '>
+        <div className='row content'>
 
           <div className='col-12 bg-light px-0'>
             <Routes >
