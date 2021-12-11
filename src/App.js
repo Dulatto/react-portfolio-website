@@ -16,10 +16,11 @@ const App = () => {
   return (
     <div>
       <div className='container-fluid'>
+        <div className='main-div'>
+          <Menu />
+        </div>
         <div className='row '>
-          <div className='main-div'>
-            <Menu />
-          </div>
+
           <div className='col-12 bg-light px-0'>
             <Routes >
               <Route exact path="/" element={<Home />} />
