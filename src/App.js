@@ -17,10 +17,10 @@ const App = () => {
     <div>
       <div className='container-fluid'>
         <div className='row '>
-          <div className='col-xl-2 col-lg-3 col-md-4 main-div px-0'>
+          <div className='col-xxl-1 col-xl-2 col-lg-3 col-md-4 main-div px-0'>
             <Menu />
           </div>
-          <div className='col-xl-10 col-lg-9 col-md-8 bg-light px-0'>
+          <div className='col-xxl-11 col-xl-10 col-lg-9 col-md-8 bg-light px-0'>
             <Routes >
               <Route exact path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
