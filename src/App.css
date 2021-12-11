@@ -6,6 +6,12 @@ body {
 .main-div {
   height: 100vh;
   background: #181818;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 130px;
+  z-index: 10;
 }
 .menu-style {
   width: 100%;
