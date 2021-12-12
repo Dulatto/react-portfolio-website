@@ -164,6 +164,11 @@ body {
 .btn {
   border-radius: 0rem;
 }
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+  color: #08fdd8;
+  opacity: 0.4;
+}
 .btn-outline-primary {
   color: #08fdd8;
   border-color: #08fdd8;

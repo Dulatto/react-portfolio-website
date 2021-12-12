@@ -3,7 +3,14 @@ import React, { useState } from 'react';
 function Contact(props) {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
+
+    const disableButton = () => {
+        if (name === '' || email === '' || subject === '' || message === '') {
+            return true;
+        }
+    }
 
     return (
         <div className='contact-style'>
@@ -29,22 +36,22 @@ function Contact(props) {
                             </div>
                             <div className='col-6'>
                                 <div className="input-group mb-3">
-                                    <input type="text" className="form-control" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)}></input>
+                                    <input type="email" className="form-control" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)}></input>
                                 </div>
                             </div>
                             <div className='col-12'>
                                 <div className="input-group mb-3">
-                                    <input type="text" className="form-control" placeholder="Subject" value={message} onChange={e => setMessage(e.target.value)}></input>
+                                    <input type="text" className="form-control" placeholder="Subject" value={subject} onChange={e => setSubject(e.target.value)}></input>
                                 </div>
                             </div>
                             <div className='col-12'>
                                 <div className="form-floating">
-                                    <textarea className="form-control" style={{ height: 100 + 'px' }} ></textarea>
+                                    <textarea className="form-control" style={{ height: 100 + 'px' }} value={message} onChange={e => setMessage(e.target.value)} ></textarea>
 
                                 </div>
                             </div>
                             <div className='col-4 mt-2'>
-                                <button type="button" className="btn btn-outline-primary hvr-bounce-to-right">Submit</button>
+                                <button type="button" className="btn btn-outline-primary hvr-bounce-to-right" disabled={disableButton()}>Submit</button>
                             </div>
 
                         </div>
