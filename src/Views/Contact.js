@@ -42,15 +42,19 @@ function Contact(props) {
         }
         else {
             setShowErrors({ showErrors: false });
+            setName('');
+            setEmail('');
+            setSubject('');
+            setMessage('');
             alert("Email Sent");
         }
     };
 
-    const disableButton = () => {
-        if (name === '' || email === '' || subject === '' || message === '') {
-            return true;
-        }
-    }
+    // const disableButton = () => {
+    //     if (name === '' || email === '' || subject === '' || message === '') {
+    //         return true;
+    //     }
+    // }
 
     return (
         <div className='contact-style'>
@@ -91,7 +95,7 @@ function Contact(props) {
                                 </div>
                             </div>
                             {showErrors ? errorMessages.map((item, index) => {
-                                return <ul key={index}>{item}</ul>;
+                                return <ul className="text-danger" key={index}>{item}</ul>;
                             }) : null}
                             <div className='col-4 mt-2'>
                                 <button type="button" className="btn btn-outline-primary hvr-bounce-to-right" onClick={formValidation} >Submit</button>
