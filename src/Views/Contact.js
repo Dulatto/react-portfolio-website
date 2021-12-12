@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Contact(props) {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
     return (
         <div className='contact-style'>
             <div className='row'>
@@ -20,17 +24,17 @@ function Contact(props) {
                         <div className='row ms-4'>
                             <div className='col-6'>
                                 <div className="input-group mb-3">
-                                    <input type="text" className="form-control" placeholder="Name" aria-describedby="inputGroup-sizing-default"></input>
+                                    <input type="text" className="form-control" placeholder="Name" value={name} onChange={e => setName(e.target.value)}></input>
                                 </div>
                             </div>
                             <div className='col-6'>
                                 <div className="input-group mb-3">
-                                    <input type="text" className="form-control" placeholder="Email" aria-describedby="inputGroup-sizing-default"></input>
+                                    <input type="text" className="form-control" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)}></input>
                                 </div>
                             </div>
                             <div className='col-12'>
                                 <div className="input-group mb-3">
-                                    <input type="text" className="form-control" placeholder="Subject" aria-describedby="inputGroup-sizing-default"></input>
+                                    <input type="text" className="form-control" placeholder="Subject" value={message} onChange={e => setMessage(e.target.value)}></input>
                                 </div>
                             </div>
                             <div className='col-12'>
@@ -39,7 +43,12 @@ function Contact(props) {
 
                                 </div>
                             </div>
+                            <div className='col-4 mt-2'>
+                                <button type="button" className="btn btn-outline-primary hvr-bounce-to-right">Submit</button>
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
                 <div className='col-md-6 map'></div>
