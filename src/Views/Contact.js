@@ -5,6 +5,46 @@ function Contact(props) {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
+    const [errorMessages, setErrorMessages] = useState([]);
+    const [showErrors, setShowErrors] = useState(false);
+
+    let errors = [];
+
+    //validate email input 
+    function ValidateEmail(email) {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) { return true; }
+        return false;
+    }
+
+    const formValidation = () => {
+        setErrorMessages([]);
+        const isNameValid = (name !== '');
+        const isMessageValid = (message !== '');
+        const isSubjectValid = (subject !== '');
+        if (!isNameValid) {
+            errors.push("Name is not valid, please try again.");
+        }
+        if (!ValidateEmail(email)) {
+            errors.push("Email is not valid, please try again.");
+        }
+        if (email === '') {
+            errors.push("Email field is empty, please try again.")
+        }
+        if (!isMessageValid) {
+            errors.push("Message is not valid, please try again.");
+        }
+        if (!isSubjectValid) {
+            errors.push("Subject is not valid, please try again.");
+        }
+        if (errors.length > 0) {
+            setShowErrors({ showErrors: true });
+            setErrorMessages(errors);
+        }
+        else {
+            setShowErrors({ showErrors: false });
+            alert("Email Sent");
+        }
+    };
 
     const disableButton = () => {
         if (name === '' || email === '' || subject === '' || message === '') {
@@ -50,8 +90,11 @@ function Contact(props) {
 
                                 </div>
                             </div>
+                            {showErrors ? errorMessages.map((item, index) => {
+                                return <ul key={index}>{item}</ul>;
+                            }) : null}
                             <div className='col-4 mt-2'>
-                                <button type="button" className="btn btn-outline-primary hvr-bounce-to-right" disabled={disableButton()}>Submit</button>
+                                <button type="button" className="btn btn-outline-primary hvr-bounce-to-right" onClick={formValidation} >Submit</button>
                             </div>
 
                         </div>
