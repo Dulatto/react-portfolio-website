@@ -26,12 +26,18 @@ body {
   color: #fff;
   text-decoration: none;
 }
-.menu-style a:hover,
+
 .name-color,
 .home-style span:hover {
   color: #08fdd8;
 }
-
+.menu-style a:hover {
+  color: #181818;
+  font-weight: bold;
+}
+.menu-style li:hover {
+  background-color: #08fdd8;
+}
 .social {
   list-style-type: none;
 }
@@ -39,6 +45,9 @@ body {
 .social i {
   color: #fff;
   text-decoration: none;
+}
+.social i:hover {
+  color: #08fdd8;
 }
 
 .home-style,

@@ -79,7 +79,7 @@ function Contact(props) {
                                 </div>
                             </div>
                             <div className='col-6'>
-                                <div className="input-group mb-3">
+                                <div className="input-group  mb-3">
                                     <input type="email" className="form-control" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)}></input>
                                 </div>
                             </div>
