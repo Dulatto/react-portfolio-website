@@ -1,4 +1,18 @@
 import React from 'react';
+import SkillBar from 'react-skillbars';
+
+
+const skills = [
+    { type: "Java", level: 85 },
+    { type: "Javascript", level: 75 },
+];
+const colors = {
+    "bar": "#3498db",
+    "title": {
+        "text": "#fff",
+        "background": "#2980b9"
+    }
+}
 
 const Skills = () => {
     return (
@@ -33,7 +47,12 @@ const Skills = () => {
                         <p className='my-5 ms-4'>Visit my <a href="https://www.linkedin.com/in/dulat-omarov/" target="_blank">LinkedIn </a>profile for more details or just <a href="http://localhost:3001/contact" >contact </a>me.</p>
                     </div>
                 </div>
-                <div className='col-md-6'></div>
+                <div className='col-md-6 m'>
+                    <div className='my-5'>&nbsp;</div>
+                    <SkillBar skills={skills} animationDuration={7000} colors={colors} />
+                </div>
+
+
             </div>
         </div>
     );
