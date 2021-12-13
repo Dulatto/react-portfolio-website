@@ -21,7 +21,7 @@ function Home(props) {
                 <span className='hvr-wobble-vertical'>e</span>
                 <span className='hvr-wobble-vertical'>r</span></h1>
             <p>Frontend Web Developer</p>
-            <button type="button" className="btn btn-outline-primary hvr-bounce-to-right">Contact Me</button>
+            <button type="button" className="btn btn-outline-primary hvr-bounce-to-right"><a href='http://localhost:3001/contact'>Contact Me</a></button>
         </div>
     );
 }

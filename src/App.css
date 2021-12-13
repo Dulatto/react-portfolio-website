@@ -170,6 +170,14 @@ body {
   border-radius: 0rem;
   padding: 0.375rem 2.75rem;
 }
+.home-style a {
+  text-decoration: none;
+  color: #08fdd8;
+}
+.home-style a:hover {
+  text-decoration: none;
+  color: #2b2b2b;
+}
 .btn {
   border-radius: 0rem;
 }
