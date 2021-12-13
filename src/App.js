@@ -5,6 +5,7 @@ import Home from './Views/Home';
 import About from './Views/About';
 import Portfolio from './Views/Portfolio';
 import Contact from './Views/Contact';
+import Skills from './Views/Skills';
 import {
   BrowserRouter as Router,
   Routes,
@@ -25,6 +26,7 @@ const App = () => {
             <Routes >
               <Route exact path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/skills" element={<Skills />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/contact" element={<Contact />} />
 

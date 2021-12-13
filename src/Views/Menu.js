@@ -20,6 +20,9 @@ function Menu(props) {
                     <Link to="/about">ABOUT</Link>
                 </li>
                 <li className='text-light d-flex justify-content-center '>
+                    <Link to="/skills">SKILLS</Link>
+                </li>
+                <li className='text-light d-flex justify-content-center '>
                     <Link to="/portfolio">PORTFOLIO</Link>
                 </li>
                 <li className='text-light d-flex justify-content-center '>
