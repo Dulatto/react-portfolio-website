@@ -63,13 +63,15 @@ body {
   height: 100vh;
 }
 .contact-style h1,
-.about-style h1 {
+.about-style h1,
+.skills-style h1 {
   color: #08fdd8;
   font-family: "Alfa Slab One", cursive;
   font-size: 60px;
 }
 .contact-style p,
-.about-style p {
+.about-style p,
+.skills-style p {
   color: #fff;
 }
 .contact-style .form-control {
