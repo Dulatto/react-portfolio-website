@@ -173,7 +173,8 @@ body {
   border-radius: 0rem;
   padding: 0.375rem 2.75rem;
 }
-.home-style a {
+.home-style a,
+.skills-style a {
   text-decoration: none;
   color: #08fdd8;
 }
