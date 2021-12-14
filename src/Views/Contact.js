@@ -50,11 +50,6 @@ function Contact(props) {
         }
     };
 
-    // const disableButton = () => {
-    //     if (name === '' || email === '' || subject === '' || message === '') {
-    //         return true;
-    //     }
-    // }
 
     return (
         <div className='contact-style'>
