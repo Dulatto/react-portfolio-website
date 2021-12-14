@@ -7,10 +7,10 @@ const skills = [
     { type: "Javascript", level: 75 },
 ];
 const colors = {
-    "bar": "#3498db",
+    "bar": "#08fdd8",
     "title": {
-        "text": "#fff",
-        "background": "#2980b9"
+        "text": "#2b2b2b",
+        "background": "#08fdd8"
     }
 }
 
@@ -47,7 +47,7 @@ const Skills = () => {
                         <p className='my-5 ms-4'>Visit my <a href="https://www.linkedin.com/in/dulat-omarov/" target="_blank">LinkedIn </a>profile for more details or just <a href="http://localhost:3001/contact" >contact </a>me.</p>
                     </div>
                 </div>
-                <div className='col-md-6 m'>
+                <div className='col-md-6 px-4'>
                     <div className='my-5'>&nbsp;</div>
                     <SkillBar skills={skills} animationDuration={7000} colors={colors} />
                 </div>
