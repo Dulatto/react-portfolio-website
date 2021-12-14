@@ -11,7 +11,7 @@ function Menu(props) {
 
 
         <div>
-            <div className='p-3 text-white my-5 d-flex justify-content-center'>My logo</div>
+            <div className='p-3 text-white my-5 d-flex justify-content-center'>LOGO</div>
             <ul className='menu-style '>
                 <li className='text-light d-flex justify-content-center '>
                     <Link to="/">HOME</Link>
