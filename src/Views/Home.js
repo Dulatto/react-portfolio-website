@@ -3,7 +3,7 @@ import React from 'react';
 function Home(props) {
     return (
         <div className='text-white home-style'>
-            <h1 className='h1-styled'><span className='hvr-wobble-vertical'>H</span>
+            <h1 className='h1-styled '><span className='hvr-wobble-vertical'>H</span>
                 <span className='hvr-wobble-vertical'>i</span>
                 <span className='hvr-wobble-vertical'>,</span>
                 <br /> <span className='hvr-wobble-vertical'>I</span>
@@ -20,8 +20,8 @@ function Home(props) {
                 <span className='hvr-wobble-vertical'>p</span>
                 <span className='hvr-wobble-vertical'>e</span>
                 <span className='hvr-wobble-vertical'>r</span></h1>
-            <p>Frontend Web Developer</p>
-            <button type="button" className="btn btn-outline-primary hvr-bounce-to-right"><a href='http://localhost:3001/contact'>Contact Me</a></button>
+
+            <button type="button" className="btn btn-outline-primary hvr-bounce-to-right mt-5"><a href='http://localhost:3001/contact'>Contact Me</a></button>
         </div>
     );
 }
