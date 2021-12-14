@@ -3,8 +3,16 @@ import SkillBar from 'react-skillbars';
 
 
 const skills = [
-    { type: "Java", level: 85 },
-    { type: "Javascript", level: 75 },
+    { type: "HTML5/CSS", level: 99 },
+    { type: "Bootstrap", level: 99 },
+    { type: "React.js", level: 85 },
+    { type: "Javascript", level: 80 },
+    { type: "REST API", level: 75 },
+    { type: "Redux", level: 75 },
+    { type: "Typescript", level: 60 },
+    { type: "Node.js", level: 50 },
+    { type: "Next.js", level: 40 },
+
 ];
 const colors = {
     "bar": "#08fdd8",
@@ -49,7 +57,7 @@ const Skills = () => {
                 </div>
                 <div className='col-md-6 px-4'>
                     <div className='my-5'>&nbsp;</div>
-                    <SkillBar skills={skills} animationDuration={7000} colors={colors} />
+                    <SkillBar skills={skills} animationDuration={4000} colors={colors} />
                 </div>
 
 
